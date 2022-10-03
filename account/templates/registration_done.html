@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<section class="mb-md-5">
+  <div class="mask d-flex align-items-center h-50 gradient-custom-3">
+    <div class="container h-50">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5 text-center">
+                <h1>Hi, {{ user.username }}</h1>
+                <p>You successfully signed in</p>
+                <h1 class="h2 text-uppercase mb-0 mb-1"><a class="small text-uppercase btn btn-dark fw-bold" href="{% url 'base:base' %}">home/</a></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
