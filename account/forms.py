@@ -26,20 +26,18 @@ class RegistrationForm(forms.ModelForm):
         })
     )
 
-    # email = forms.CharField(
-    #     max_length=50,
-    #     widget=forms.EmailInput(attrs={
-    #         'type': 'email',
-    #         'class': 'form-control',
-    #         'name': 'email',
-    #         'id': 'email',
-    #         'placeholder': 'Your Email',
-    #         'data-rule': 'email',
-    #         'data-msg': 'Please enter a valid email'
-    #     })
-    # )
-
-    # password = forms.CharField(widget=forms.PasswordInput())
+    email = forms.CharField(
+        max_length=50,
+        widget=forms.EmailInput(attrs={
+            'type': 'email',
+            'class': 'form-control',
+            'name': 'email',
+            'id': 'email',
+            'placeholder': 'Your Email',
+            'data-rule': 'email',
+            'data-msg': 'Please enter a valid email'
+        })
+    )
 
     password = forms.CharField(
         label='',
@@ -50,8 +48,6 @@ class RegistrationForm(forms.ModelForm):
             'placeholder': 'Password'
         })
     )
-
-    # password2 = forms.CharField(widget=forms.PasswordInput())
 
     password2 = forms.CharField(
         label='',
